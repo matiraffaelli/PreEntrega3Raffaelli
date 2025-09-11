@@ -1,0 +1,64 @@
+  <main>
+        
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-4">       
+    <!-- Sección de Servicios -->
+          <section class="bg-white p-4 rounded-3 shadow">
+            <h2 class="text-center mb-3">✂️ Servicios</h2>
+            <ul class="list-unstyled p-0">
+                <li class="p-1 rounded shadow mb-4 border border-secondary bg-dark text-white"><strong>Corte:</strong> $10.000 - Corte clásico o moderno</li>
+                <li class="p-1 rounded shadow mb-4 border border-secondary bg-dark text-white"><strong>Corte + Barba:</strong> $12.000 - Look completo</li>
+                <li class="p-1 rounded shadow mb-4 border border-secondary bg-dark text-white"><strong>Barba:</strong> $5000 - Diseño y perfilado</li>
+                <li class="p-1 rounded shadow mb-4 border border-secondary bg-dark text-white"><strong>Color + corte:</strong> $40.000 - Colores clásicos o fantasía</li>
+                <li class="p-1 rounded shadow mb-4 border border-secondary bg-dark text-white"> <strong>Mechas + corte: </strong> 35.000 - Colores clásicos o fantasía</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  
+<!-- Sección de Agenda -->
+    <section class="agenda section-todo container my-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6">
+          <div class="card shadow rounded-3">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">📅 Agendar Turno</h2>
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="fecha" class="form-label">Fecha</label>
+                <input type="date" id="fecha" name="fecha" class="form-control" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="hora" class="form-label">Hora</label>
+                <input type="time" id="hora" name="hora" class="form-control" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="servicio" class="form-label">Servicio</label>
+                <select id="servicio" name="servicio" class="form-select" required>
+                  <option value="corte">Corte</option>
+                  <option value="corte_barba">Corte + Barba</option>
+                  <option value="barba">Barba</option>
+                  <option value="color_corte">Color + Corte</option>
+                  <option value="mechas_corte">Mechas + Corte</option>
+                </select>
+              </div>
+
+              <div class="d-grid">
+                <button class="btn btn-dark" type="submit">Reservar Turno</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
